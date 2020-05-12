@@ -1,0 +1,378 @@
+/*
+Shravani Raju Pathapati
+823370204
+CS 545 - Cyndi Chie
+CSS Assigment 2 
+*/
+
+/* Page default settings */
+body {
+	font-size: 14pt;
+	background-color: #E5FAFF;
+	color: #3D3A4F;
+	font-family: Candara, san-serif;
+	transition: 200ms ease;
+	margin: 0px;
+	height: 100%;
+	transition: background 2s ease;
+}
+
+.wrapper {
+  	display: flex;  
+  	flex-flow: row wrap;
+  	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper > * {
+  padding: 5px;
+  flex: 1 100%;
+}
+
+/* Header settings */
+.header {
+	padding: 0px;
+	margin: 0px;
+	background-color: #152C4F;
+	color: #b8e7ff;
+	overflow: auto;
+}
+
+.header-text {
+	font-size: 16pt;
+	color: #b8e7ff;
+    padding-left: 20%;
+}
+
+label.topright {
+  	position: absolute;
+  	top: 25px;
+  	right: 16px;
+  	font-size: 15pt;
+	color: #b8e7ff;
+	font-weight: normal;
+	font-style: italic;
+	font-family: Candara, san-serif;
+}
+
+article {
+	margin: 30px;
+}
+
+div.first {
+	padding: 15px;
+	margin: 0px 0px 0px -10px;
+}
+
+section {
+	margin: 0px;
+}
+
+p {
+	margin: 0px 15px 15px 0px;
+}
+
+/* Headings */
+h1 {
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #b8e7ff;
+	font-family: "Palatino Linotype", "Times New Roman", serif;
+	text-align: center;
+	width: 100%;
+}
+
+.h2_center {
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #1D1A40;
+	font-family: "Palatino Linotype", "Times New Roman", serif;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.h3_center {
+	font-size: 16pt;
+	color: #1D1A40;
+	font-family: Playfair Display;
+	font-style: italic;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+/* Main Content Link Styles */
+
+a:link, a:visited {
+	color: #321259;
+	/*text-decoration: none;*/
+}
+
+a:hover, a:active {
+	background-color: #21E6FC;
+	color: #2C21FC;
+	text-decoration: none;
+}
+
+/* 3 column pages */
+.main {
+  	text-align: left;
+    padding: 15px;
+	margin: 0px;
+}
+
+.aside-1 {
+    padding: 15px;
+}
+
+.aside-2 {
+    padding: 15px;
+}
+
+/* 2 column pages */
+.flex-container {
+	background-color: #E5FAFF;
+	color: #3D3A4F;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0px 20px;
+}
+
+.column2_1 {
+    float: left;
+    width: 75%;
+    padding: 15px;
+	border-right: 2px solid #321259;
+}
+
+aside {
+    float: left;
+    width: 23%;
+    padding: 15px;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; 
+	border-right: 1px solid #321259;
+	border-left: 1px solid #321259;
+  }
+}
+
+@media all and (min-width: 800px) {
+
+  .main    { flex: 1 0px; } 
+  .aside-1 { order: 1; border-right: 2px solid #321259;} 
+  .main    { order: 2; }
+  .aside-2 { order: 3; border-left: 2px solid #321259;}
+  .footer  { order: 4; } 
+}
+
+@media all and (min-width: 600px) {
+	h1 {font-size: 24pt;}
+}
+
+@media all and (min-width: 800px) {
+	h1 {font-size: 30pt;}
+}
+
+@media all and (min-width: 1000px) {
+	h1 {font-size: 36pt;}
+}
+
+h2 {
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #1D1A40;
+	font-family: "Palatino Linotype", "Times New Roman", serif;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-size: 16pt;
+	color: #1D1A40;
+	font-family: Playfair Display;
+	font-style: italic;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+h4 {
+	font-size: 10pt;
+	color: #1D1A40;
+	font-family: "Palatino Linotype", "Times New Roman", serif;
+	font-style: italic;
+	text-align: right;
+}
+
+img {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Navigation Styles */
+ul.HNav1 {
+	text-align: center;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 20px;
+	overflow: auto;
+	background-color: #b8e7ff;
+	color: #152C4F;
+}
+
+ul.HNav1 li {
+	margin: 0px;
+	line-height: 2em;
+	display: inline-block;
+	text-align: center;
+}
+
+ul.HNav1 a:link, ul.HNav1 a:visited {
+	padding: 0px 15px;
+	color: #152C4F;
+	text-decoration: none;
+}
+
+ul.HNav1 a:hover, ul.HNav1 a:active {
+	padding: 0px 15px;
+	background-color: #152C4F;
+	color: #b8e7ff;
+	text-decoration: none;
+}
+
+/* Images and Floats */
+.clrflt {
+	clear: both;
+}
+
+.fltrght {
+	float: right;
+	margin-left: 10px;
+}
+
+.fltleft {
+	float: left;
+	margin-right: 10px;
+}
+
+.lightimg {
+	border: 1pt solid black;
+	background-color: #E5FAFF;
+}
+
+.fltimglft {
+	float: left;
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12pt;
+	margin-left: 5px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.fltimgrght {
+	float: right;
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12pt;
+	margin-left: 20px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+
+.fltimgnone {
+	float: none;
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12pt;
+	margin: 20px;
+}
+
+/* Footer Styles */
+footer a:link, footer a:visited {
+	color: #21E6FC;
+	/*text-decoration: none;*/
+}
+
+footer a:hover, footer a:active {
+	background-color: #21E6FC;
+	color: #2C21FC;
+	text-decoration: none;
+}
+
+/* Footer Styles */
+.footer {
+	/*position: fixed;*/
+	bottom: 0;
+	width: 100%;
+	clear: both;
+	text-align: left;
+	font-size: 10pt;
+	background-color: #152C4F;
+	color: #b8e7ff;
+	display: flex;
+	min-height: 4em;
+	padding: 0px;
+	overflow: auto;
+}
+
+/* Footer Button Styles */
+ul.footerbuttons {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden; 
+	background-color: #152C4F;
+	color: #b8e7ff;
+}
+
+ul.footerbuttons li {
+	/*border: 1px solid #fffcf5;*/
+	padding: 0px;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+ul.footerbuttons li a:link, ul.footerbuttons li a:visited {
+	color: #b8e7ff;
+	text-decoration: none;
+}
+
+ul.footerbuttons li a:hover, ul.footerbuttons li a:active {
+	background-color: #21E6FC;
+	color: #2C21FC;
+	text-decoration: none;
+}
+
+/* Footer Columns */
+.fcolumn1 {
+    padding: 15px;
+	text-align: center;
+}
+
+.fcolumn2 {
+	font-size: 11pt;
+    padding: 15px;
+	text-align: center;
+}
+
+.fcolumn3 {
+	font-size: 11pt;
+    padding: 15px;
+    text-align: center;
+}
+
+@media all and (min-width: 800px) {
+  .fcolumn1 { flex: 1 0px; } 
+  .fcolumn1 { order: 1; width: 45%; float: left; text-align: center;} 
+  .fcolumn2 { order: 2; width: 45%; float: left; text-align: center;}
+  .fcolumn3 { order: 3; width: 10%; float: left; text-align: center;}
+}
